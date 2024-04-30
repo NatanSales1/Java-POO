@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="MeetingManager" package="" visibility="public" xPosition="147.0" yPosition="173.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Participante" package="" visibility="public" xPosition="147.0" yPosition="343.0">
+      <Fields>
+        <Field name="nome" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nome"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNome" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Reuniao" package="" visibility="public" xPosition="464.0" yPosition="112.0">
+      <Fields>
+        <Field name="localP" type="String" visibility="private"/>
+        <Field name="plataforma" type="String" visibility="private"/>
+        <Field name="data" type="Date" visibility="private"/>
+        <Field name="horario" type="int" visibility="private"/>
+        <Field name="participantes" type="int" visibility="private"/>
+        <Field name="nomeParticipantes" type="Participante[]" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getLocalP" returnType="String" visibility="public"/>
+        <Method name="setLocalP" returnType="void" visibility="public">
+          <Argument type="String" name="localP"/>
+        </Method>
+        <Method name="getPlataforma" returnType="String" visibility="public"/>
+        <Method name="setPlataforma" returnType="void" visibility="public">
+          <Argument type="String" name="plataforma"/>
+        </Method>
+        <Method name="getData" returnType="String" visibility="public"/>
+        <Method name="setData" returnType="void" visibility="public">
+          <Argument type="String" name="data"/>
+        </Method>
+        <Method name="getHorario" returnType="int" visibility="public"/>
+        <Method name="setHorario" returnType="void" visibility="public">
+          <Argument type="int" name="horario"/>
+        </Method>
+        <Method name="getParticipantes" returnType="int" visibility="public"/>
+        <Method name="setParticipantes" returnType="void" visibility="public">
+          <Argument type="int" name="participantes"/>
+        </Method>
+        <Method name="getNomeParticipantes" returnType="Participante[]" visibility="public"/>
+        <Method name="setParticipantes" returnType="void" visibility="public">
+          <Argument type="Participante[]" name="nomeParticipantes"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Reuniao" target="Participante" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
